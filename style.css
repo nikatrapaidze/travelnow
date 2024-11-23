@@ -1,0 +1,142 @@
+
+
+
+   
+
+
+
+div{
+    margin: 10px;
+    border: 1px solid black ;
+   height : 80px;
+}
+#header{
+    background-color: rgb(199, 199, 223);
+    
+}
+#leftSidebar{
+    background-color: rgb(197, 197, 226);
+    float: left;
+    width: 150px;
+    height: 650px;
+    background-position: center;
+    margin-left: 15px;
+}
+#rightSidebar{
+    background-color: rgb(191, 191, 216);
+    float: right;
+    width: 150px;
+    height: 650px;
+    background-position: center;
+    margin-right: 15px;
+    background: no-repeat;
+}
+#main{
+   
+    background-image:url(https://th.bing.com/th/id/R.b9d6e872e74da7cae874f4c18cd8f3a4?rik=S433Rp%2f%2fY7wsXw&riu=http%3a%2f%2fwww.dearbornbortec.com%2fwp-content%2fuploads%2f2019%2f11%2faerospace-plane-rising-sunrise-e1573070832887-845x684.jpg&ehk=Z2GVANGZ7TXuCb1cAC%2fESWzejRVCWsvjWve8rjLE2gM%3d&risl=&pid=ImgRaw&r=0);
+    background-color: rgb(166, 166, 187);
+    height: 200px;
+    margin-left: 170px;
+    margin-right: 170px;
+    height: 700px;
+}
+#footer{
+    background-color: rgb(203, 203, 231);
+    height: 200px;
+}
+
+
+body{
+
+    background-color: rgb(167, 167, 201);
+}
+
+
+@media (max-device-width:480px) {
+
+body{
+    
+    background-color: rgb(176, 176, 197);
+}
+}
+/*ფონი და ტექსტისსტილი*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(198, 198, 235);
+}
+/* ბურგერ მენიუს ღილაკის სტილი */
+.burger-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    padding: 10px;
+}
+.burger-menu .bar{
+    width: 100%;
+    height: 5px;
+    background-color: #333;
+    transition: 0.3s;
+}
+/* მენიუ */
+.menu{
+display: none;
+position: absolute;
+top: 0;
+right: 0;
+background-color: #333;
+width: 200px;
+height: 100vh;
+
+}
+.menu  ul{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+.menu ul li{
+padding: 15px;
+text-align: center;
+
+
+}
+.menu ul li a{
+text-decoration: none;
+color: white;
+font-size: 18px;
+}
+.menu ul li:hover{
+background-color: #4444;
+
+
+}
+/* ფარული ჩეკბოქსის სტილი ჩატვირტვის დროს არ ჩანს */
+.burger-toggle{
+display: none;
+}
+/* როდესაც ჩეკბოქსი მონიშნულია მენიუ გამოჩნდება */
+
+.burger-toggle:checked +.menu{
+
+    display: block;
+}
+.burger-toggle:checked +.menu + .burger-menu .bar:nth-child(1){
+
+transform: rotate(45deg);
+position: relative;
+top: 10px;
+}
+.burger-toggle:checked +.menu + .burger-menu .bar:nth-child(2){
+
+    opacity: 0;
+
+}
+.burger-toggle:checked +.menu + .burger-menu .bar:nth-child(3){
+transform: rotate(45deg);
+position: relative;
+top: -10px;
+}
+
